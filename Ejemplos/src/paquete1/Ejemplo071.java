@@ -33,15 +33,17 @@ public class Ejemplo071 {
             // se asigna la variable dato a la posición del arreglo
             // de acuerdo al valor de i
             arreglo1[i] = dato;
-            serie = String.format("%s%d\n", serie, dato);
-
+         
         }
 
         // Se hace uso del ciclo repetitivo for para recorrer el arreglo
         for (int i = 0; i < arreglo1.length; i++) {
             // agrego el valor de la posición del arreglo a la variable
             // acumuladora  suma
+            serie = String.format("%s%d\n", serie,arreglo1[i]);
+
             suma = suma + arreglo1[i];
+            
         }
 
         // System.out.printf("La suma de los valores del arreglo es: %d%d\n", serie, suma);
